@@ -54,7 +54,7 @@ table {
 
 header {
   height: 100vh;
-  background-color: red;
+  background: url("../assets/img/bg_header_big.webp") center/cover;
 }
 
 /*# sourceMappingURL=style.css.map */
