@@ -2,5 +2,27 @@
 
 header {
     height: 100vh;
-    background: url('../assets/img/bg_header_big.webp') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        color:#fff;
+        font-size: 30px;
+    }
+
+    // background-image: url('../assets/img/bg_header_small.webp');
+    // background-position: center;
+    // background-size: cover;
+    
+    background: url('../assets/img/bg_header_small.webp') center/cover;
+
+    @media screen and (min-width: 768px) {
+        background-image: url('../assets/img/bg_header_medium.webp');
+    }
+    
+    @media screen and (min-width: 1024px) {
+        background-image: url('../assets/img/bg_header_big.webp');
+    }
+
 }
