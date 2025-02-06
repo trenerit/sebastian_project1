@@ -1,21 +1,25 @@
 @use 'reset';
 
+* {
+    font-family: inherit;
+}
+
+html {
+    font-family: "Lato", serif;
+    font-size: 10px;
+}
+
 header {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    h1 {
-        color:#fff;
-        font-size: 30px;
-    }
 
     // background-image: url('../assets/img/bg_header_small.webp');
     // background-position: center;
     // background-size: cover;
     
-    background: url('../assets/img/bg_header_small.webp') center/cover;
+    background: url('../assets/img/bg_header_small.webp') center/cover fixed;
 
     @media screen and (min-width: 768px) {
         background-image: url('../assets/img/bg_header_medium.webp');
@@ -25,4 +29,22 @@ header {
         background-image: url('../assets/img/bg_header_big.webp');
     }
 
+    h1 {
+        color:#fff;
+        font-size: 3.6rem;
+        @media screen and (min-width: 768px) {
+            font-size: 5rem;
+        }
+        
+        @media screen and (min-width: 1024px) {
+            font-size: 7rem;
+        }
+        text-align: center;
+        padding: 1rem;
+        line-height: 3ex;
+    }
+}
+
+main {
+    height: 200vh;
 }
