@@ -1,0 +1,9 @@
+@mixin media-queries($mw: 768px) {
+
+    @media screen and (min-width: $mw) {
+        
+        @content;
+        
+    }
+
+}

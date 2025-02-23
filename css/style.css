@@ -66,26 +66,27 @@ a {
   text-decoration: none;
 }
 
-header {
+.header {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #F2E6D8;
   background: url("../assets/img/bg_header_small.webp") center/cover fixed;
 }
 @media screen and (min-width: 768px) {
-  header {
+  .header {
     background-image: url("../assets/img/bg_header_medium.webp");
   }
 }
 @media screen and (min-width: 1024px) {
-  header {
+  .header {
     background-image: url("../assets/img/bg_header_big.webp");
   }
 }
-header .head-big-text {
+
+.head-big-text {
   flex-basis: 20%;
   font-size: 3.6rem;
   text-align: center;
@@ -93,13 +94,18 @@ header .head-big-text {
   line-height: 3ex;
 }
 @media screen and (min-width: 768px) {
-  header .head-big-text {
+  .head-big-text {
     font-size: 5rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  header .head-big-text {
+  .head-big-text {
     font-size: 7rem;
+  }
+}
+@media screen and (min-width: 2024px) {
+  .head-big-text {
+    font-size: 9rem;
   }
 }
 

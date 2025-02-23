@@ -1,0 +1,44 @@
+@use 'variables' as v;
+@use 'mixins' as *;
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: v.$color4;
+    background: url('../assets/img/bg_header_small.webp') center/cover fixed;
+
+    @include media-queries {
+        background-image: url('../assets/img/bg_header_medium.webp');
+    }
+    
+    @include media-queries(1024px) {
+        background-image: url('../assets/img/bg_header_big.webp');
+    }   
+}
+
+.head-big-text {
+    flex-basis: 20%;
+    font-size: 3.6rem;
+    text-align: center;
+    padding: 1rem;
+    line-height: 3ex;
+
+    @include media-queries {
+        font-size: 5rem;
+    }
+    
+    @include media-queries(1024px) {
+        font-size: 7rem;
+    }
+    
+    @include media-queries(2024px) {
+        font-size: 9rem;
+    }
+}
+
+.btn-header-main {
+    background-color: v.$color3;
+}
