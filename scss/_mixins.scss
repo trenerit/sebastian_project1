@@ -1,4 +1,20 @@
-@mixin media-queries($mw: 768px) {
+$bp-m: 768px;
+$bp-l: 1024px;
+$bp-xl: 2024px;
+
+@mixin media-queries($symbol: 'm') {
+
+    $mw: 0;
+
+    @if $symbol == 'm' {
+        $mw: $bp-m;
+    } @else if $symbol == 'l' {
+        $mw: $bp-l;
+    } @else if $symbol == 'xl' {
+        $mw: $bp-xl;
+    } @else {
+        $mw: $symbol;
+    }
 
     @media screen and (min-width: $mw) {
         
