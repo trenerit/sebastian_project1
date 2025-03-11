@@ -91,6 +91,12 @@ a {
 @media screen and (min-width: 1024px) {
   .nav ul {
     display: block;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav ul li {
+    flex-basis: 15%;
+    text-align: center;
   }
 }
 

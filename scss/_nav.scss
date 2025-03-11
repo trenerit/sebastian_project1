@@ -21,8 +21,17 @@
 
     ul {
         display: none;
+        
         @include media-queries('l') {
             display: block;
+            display: flex;
+            // justify-content: space-evenly;
+            justify-content: flex-end;
+            
+            li {
+                flex-basis: 15%;
+                text-align: center;
+            }
         }
     }
 }
