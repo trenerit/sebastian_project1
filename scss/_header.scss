@@ -3,12 +3,9 @@
 
 .header {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: v.$color4;
     background: url('../assets/img/bg_header_small.webp') center/cover fixed;
+    position: relative;
 
     &::after {
         content: '';
@@ -25,11 +22,25 @@
     
     @include media-queries('l') {
         background-image: url('../assets/img/bg_header_big.webp');
-    }   
+    }  
+    
+    div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        opacity: 0;
+        animation: showH1 1.4s linear forwards;
+    }
 }
 
 .head-big-text {
-    z-index: 1;
     flex-basis: 20%;
     font-size: 3.6rem;
     text-align: center;
@@ -50,7 +61,6 @@
 }
 
 .btn-header-main {
-    z-index: 1;
     width: 120px;
     background-color: v.$color-btn-main;
     padding: 20px;
