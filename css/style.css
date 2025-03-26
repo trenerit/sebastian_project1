@@ -111,6 +111,11 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
+  .col-m-33 {
+    flex-basis: 33%;
+  }
+}
+@media screen and (min-width: 768px) {
   .col-m-25 {
     flex-basis: 25%;
   }
@@ -121,8 +126,18 @@ a {
   }
 }
 @media screen and (min-width: 1024px) {
+  .col-l-33 {
+    flex-basis: 33%;
+  }
+}
+@media screen and (min-width: 1024px) {
   .col-l-25 {
     flex-basis: 25%;
+  }
+}
+@media screen and (min-width: 2024px) {
+  .col-xl-20 {
+    flex-basis: 20%;
   }
 }
 
