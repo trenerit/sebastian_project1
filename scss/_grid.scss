@@ -7,20 +7,20 @@
     @include media-queries {
         width: 760px;
     }
-    
-    @include media-queries('l') {
+
+    @include media-queries("l") {
         width: 1000px;
     }
-    
-    @include media-queries('xl') {
+
+    @include media-queries("xl") {
         width: 1800px;
     }
 }
 
 .row {
-   display: flex;
-//    flex-direction: column;
-   flex-wrap: wrap; 
+    display: flex;
+    //flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .col {
@@ -29,25 +29,43 @@
 
     &-m-50 {
         @include media-queries {
-            flex-basis: 50%;
+        flex-basis: 50%;
         }
     }
-    
+
+    &-m-33 {
+        @include media-queries {
+        flex-basis: 33%;
+        }
+    }
+
     &-m-25 {
         @include media-queries {
-            flex-basis: 25%;
+        flex-basis: 25%;
         }
     }
-    
+
     &-l-50 {
-        @include media-queries('l') {
-            flex-basis: 50%;
+        @include media-queries("l") {
+        flex-basis: 50%;
         }
     }
-    
+
+    &-l-33 {
+        @include media-queries("l") {
+        flex-basis: 33%;
+        }
+    }
+
     &-l-25 {
-        @include media-queries('l') {
-            flex-basis: 25%;
+        @include media-queries("l") {
+        flex-basis: 25%;
+        }
+    }
+
+    &-xl-20 {
+        @include media-queries("xl") {
+            flex-basis: 20%;
         }
     }
 }
