@@ -1,0 +1,27 @@
+.image-box {
+    display: block;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: .4rem;
+    box-shadow: 0 0 1.5rem gray;
+    transition: .5s;
+    
+    &:hover {
+        box-shadow: 0 0 2.5rem;
+        cursor: pointer;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__picture {
+        width: 96%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__text {
+        padding: 10px;
+    }
+}

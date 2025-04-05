@@ -25,7 +25,7 @@
 
 .col {
     flex: 0 0 100%;
-    padding: 10px;
+    padding: 1rem;
 
     &-m-50 {
         @include media-queries {

@@ -76,6 +76,16 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
 .container {
   width: 96%;
   margin: 0 auto;
@@ -103,7 +113,7 @@ a {
 
 .col {
   flex: 0 0 100%;
-  padding: 10px;
+  padding: 1rem;
 }
 @media screen and (min-width: 768px) {
   .col-m-50 {
@@ -278,6 +288,30 @@ section h2 {
   font-size: 3.4rem;
   text-align: center;
   margin-bottom: 4rem;
+}
+
+.image-box {
+  display: block;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1.5rem gray;
+  transition: 0.5s;
+}
+.image-box:hover {
+  box-shadow: 0 0 2.5rem;
+  cursor: pointer;
+}
+.image-box__title {
+  text-align: center;
+}
+.image-box__picture {
+  width: 96%;
+  display: block;
+  margin: 0 auto;
+}
+.image-box__text {
+  padding: 10px;
 }
 
 input, textarea, button {
