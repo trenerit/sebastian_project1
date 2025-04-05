@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+footer {
+    height: 40vh;
+    background-color: #0d0d0d;
+    color: $color4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-align: center;
+    }
+}

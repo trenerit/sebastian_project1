@@ -344,4 +344,16 @@ form button:hover {
   cursor: pointer;
 }
 
+footer {
+  height: 40vh;
+  background-color: #0d0d0d;
+  color: #F2E6D8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
