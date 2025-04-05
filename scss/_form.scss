@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+input, textarea, button {
+    font-size: 1.7rem;
+    display: block;
+    margin-bottom: 2rem;
+    border-radius: .6rem;
+    border: 1px solid lightgray;
+    transition: .5s;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 2rem;
+    resize: none;
+    outline: 0;
+    
+    &:focus {
+        border: 1px solid gray;
+        background-color: $color4;
+    } 
+}
+
+form button {
+    width: 40%;
+    padding: 1.5rem;
+    background-color: gray;
+
+    &:hover {
+        opacity: .5;
+        cursor: pointer;
+    }
+}

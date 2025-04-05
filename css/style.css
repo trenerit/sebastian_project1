@@ -63,8 +63,8 @@ table {
 }
 
 html {
-  font-family: "Lato", serif;
   font-size: 10px;
+  font-family: "Lato", serif;
 }
 
 html, body {
@@ -278,6 +278,36 @@ section h2 {
   font-size: 3.4rem;
   text-align: center;
   margin-bottom: 4rem;
+}
+
+input, textarea, button {
+  font-size: 1.7rem;
+  display: block;
+  margin-bottom: 2rem;
+  border-radius: 0.6rem;
+  border: 1px solid lightgray;
+  transition: 0.5s;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 2rem;
+  resize: none;
+  outline: 0;
+}
+input:focus, textarea:focus {
+  border: 1px solid gray;
+  background-color: #F2E6D8;
+}
+
+form button {
+  width: 40%;
+  padding: 1.5rem;
+  background-color: gray;
+}
+form button:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
