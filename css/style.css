@@ -175,7 +175,6 @@ h3 {
 }
 @media screen and (min-width: 1024px) {
   .nav ul {
-    display: block;
     display: flex;
     justify-content: flex-end;
   }
@@ -183,11 +182,21 @@ h3 {
     flex-basis: 15%;
     text-align: center;
   }
+  .nav ul a {
+    display: block;
+    width: 100%;
+    transition: 0.4s;
+  }
+  .nav ul a:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .logo {
   flex-basis: 50%;
   padding-left: 2%;
+}
+.logo a {
   font-size: 3.2rem;
 }
 
@@ -282,7 +291,7 @@ section {
   padding-top: 8rem;
 }
 section:nth-of-type(even) {
-  background-color: lightgray;
+  background-color: #F9F9F9;
 }
 section h2 {
   font-size: 3.4rem;

@@ -24,7 +24,6 @@
         display: none;
         
         @include media-queries('l') {
-            display: block;
             display: flex;
             // justify-content: space-evenly;
             justify-content: flex-end;
@@ -33,6 +32,15 @@
                 flex-basis: 15%;
                 text-align: center;
             }
+
+            a {
+                display: block;
+                width: 100%;
+                transition: .4s;
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
         }
     }
 }
@@ -40,7 +48,10 @@
 .logo {
     flex-basis: 50%;
     padding-left: 2%;
-    font-size: 3.2rem;
+    
+    a {
+        font-size: 3.2rem;
+    }
 }
 
 .menu {
